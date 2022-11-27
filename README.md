@@ -21,7 +21,7 @@ Avec un déploiement (méthode à utiliser)
 ----------------------------------------
 
 *   Créez un fichier `rancher-demo-deploy.yaml` avec à l’intérieur le code suivant à compléter:
-
+  ```
     apiVersion: apps/v1
     kind: Deployment
     metadata:
@@ -46,7 +46,7 @@ Avec un déploiement (méthode à utiliser)
             ports:
             - containerPort: <port>
               name: demo-http
-    
+  ```    
 
 *   Appliquez ce nouvel objet avec kubectl.
 *   Inspectez le déploiement dans Lens.
@@ -57,7 +57,7 @@ Ajoutons un service en mode NodePort
 ------------------------------------
 
 *   Créez un fichier `rancher-demo-svc.yaml` avec à l’intérieur le code suivant à compléter:
-
+  ```
     apiVersion: v1
     kind: Service
     metadata:
@@ -70,8 +70,8 @@ Ajoutons un service en mode NodePort
       selector:
         app: <app_selector> 
       type: NodePort
-    
-
+  ```
+  
 *   Appliquez ce nouvel objet avec kubectl.
 *   Inspectez le service dans Lens.
 *   Visitez votre application avec `minikube service rancher-demo-service`, le nombre de réplicat devrait apparaître.
