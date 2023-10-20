@@ -1,8 +1,8 @@
-Dans ce TP nous allons déployer une application `rancher-demo` mais cette fois en utilisant `kubectl apply -f` et en visualisant le résultat dans `Lens`.
+Dans ce TP nous allons déployer une application `rancher-demo` mais cette fois en utilisant `kubectl apply -f`.
 
 *   Changez de contexte pour minikube avec `kubectl config use-context minikube`
 *   Chargez également la configuration de minikube dans `Lens` en cliquant à nouveau sur plus et en selectionnant `minikube`
-*   Créez un dossier `TP_deploy_using_files_and_Lens` sur le bureau de la machine distante et ouvrez le avec `VSCode`.
+*   Créez un dossier `TP_deploy_k8s` sur le bureau de la machine distante et ouvrez le avec `VSCode`.
 
 Nous allons d’abord déployer notre application comme un simple **Pod**
 
@@ -77,3 +77,4 @@ Ajoutons un service en mode NodePort
 *   Visitez votre application avec `minikube service rancher-demo-service`, le nombre de réplicat devrait apparaître.
 *   Changez les labels du template et du selector dans le **déploiement** (2 fois `app: rancher-demo` à remplacer dans le fichier ) et supprimez le déploiement et réappliquez.
 *   Constatez que l’application n’est plus accessible dans le navigateur. Pourquoi ?
+*   Ajoutez un service LoadBalancer à la place de NodePort.
