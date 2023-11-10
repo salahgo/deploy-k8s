@@ -7,7 +7,7 @@ Dans ce TP nous allons déployer une application `rancher-demo` mais cette fois 
 Nous allons d’abord déployer notre application comme un simple **Pod**
 
 *   Créez un fichier `rancher-demo-pod.yaml` avec à l’intérieur le code d’exemple du cours précédent de la partie Pods.
-*   Téléchargez l'image rancher-demo `docker pull epsdevops/rancher-demo`
+*   Téléchargez l'image rancher-demo `docker pull salahgo/rancher-demo`
 *   Appliquez le ficher avec `kubectl apply -f <fichier>`
 *   Constatez dans Lens dans la partie pods que les deux conteneurs du pod sont bien démarrés (deux petits carrés vert à droite de la ligne du pod)
 *   Modifiez le nom du pod dans la description précédente et réappliquez la configuration. Kubernetes mets à jour le nom.
