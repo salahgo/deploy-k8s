@@ -78,3 +78,19 @@ Ajoutons un service en mode NodePort
 *   Changez les labels du template et du selector dans le **déploiement** (2 fois `app: rancher-demo` à remplacer dans le fichier ) et supprimez le déploiement et réappliquez.
 *   Constatez que l’application n’est plus accessible dans le navigateur. Pourquoi ?
 *   Ajoutez un service LoadBalancer à la place de NodePort.
+
+Déploiement de l'Application de TP3 dans Minikube
+------------------------------------------
+
+*   Créez un fichier YAML pour le déploiement de votre application de TP3 "express-sqlite-app".
+*   Définissez les spécifications nécessaires, y compris l'image Docker de votre application, le nombre de répliques, et les ports, utilisez les objets précédents pour ça.
+
+Exposition de l'Application via un Service NodePort
+
+*   Créez un fichier YAML pour le service NodePort.
+*   Configurez les ports et le type de service pour exposer votre application.
+
+Exposition via un LoadBalancer
+
+*   Modifiez le type de service en LoadBalancer dans votre fichier YAML.
+*   Utilisez minikube tunnel pour exposer le LoadBalancer avec `minikube tunnel`
