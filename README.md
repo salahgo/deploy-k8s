@@ -82,8 +82,10 @@ Ajoutons un service en mode NodePort
 Déploiement de l'Application de TP3 dans Minikube
 ------------------------------------------
 
+Création d'un Déploiement Kubernetes
+
 *   Créez un fichier YAML pour le déploiement de votre application de TP3 "express-sqlite-app".
-*   Définissez les spécifications nécessaires, y compris l'image Docker de votre application, le nombre de répliques, et les ports, utilisez les objets précédents pour ça.
+*   Définissez les spécifications nécessaires, y compris l'image Docker de votre application, le nombre de répliques, et les ports (utilisez les objets précédents pour ça).
 
 Exposition de l'Application via un Service NodePort
 
