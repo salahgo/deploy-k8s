@@ -49,7 +49,6 @@ Avec un déploiement (méthode à utiliser)
   ```    
 
 *   Appliquez ce nouvel objet avec kubectl.
-*   Inspectez le déploiement dans Lens.
 *   Changez le nom d’un conteneur et réappliquez: Cette fois le déploiement se charge créer un nouveau pod avec les bonnes caractéristiques et de supprimer l’ancien.
 *   Changez le nombre de réplicats.
 
